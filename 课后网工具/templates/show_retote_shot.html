@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+	<meta charset="utf-8">
+	<title>
+
+		远程截图
+
+	</title>
+
+</head>
+
+
+
+
+<body>
+	<h2>远程截图</h2>
+
+	{%for one in pics%}
+		<p>
+			<a href="/img?path={{one[1]}}">
+				{{one[0]}}
+			</a>
+		</p>
+	{%endfor%}
+	
+</body>
+
+
+
+</html>

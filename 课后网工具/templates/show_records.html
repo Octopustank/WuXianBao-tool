@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+	
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="refresh"content="5">
+
+	<title>
+
+		日志查看
+
+	</title>
+
+</head>
+
+
+
+<body>
+
+	<style tylie=\"text/css\">
+
+       		.tlt1{font-size:26px}
+
+		{%if condition==True%}
+        		.tlt2{font-size:15px; color:green}
+
+		{%else%}
+			.tlt2{font-size:15px; color:red}
+
+		{%endif%}
+	</style>
+
+	<div style="display:inline;">
+		<div style="display:inline; font-size: 30px; font-weight: 500; line-height: 2.5em; color: #4E4A4E; font-family: 'Smiley Sans','Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';" class="tlt1" >
+			日志
+		</div>
+
+		<div style="display:inline; font-size: 18px; font-family: 'Smiley Sans', 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';" class="tlt2" >
+			{%if condition==True%}
+        			正常
+			{%else%}
+				主程序异常
+			{%endif%}
+		</div>
+
+	</div>
+
+	
+	<table border="3" algin="left" style="border-collapse:collapse; font-size: 18px; font-family: 'Smiley Sans', 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';">
+
+		{%for i in lst%}
+
+			<tr>
+			<td>{{i[0]}}</td>
+			<td>{{i[1]}}</td>
+			<td>{{i[2]}}</td>
+			</tr>
+
+		{%endfor%}
+
+	</table>
+
+</body>
+
+</html>

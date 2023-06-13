@@ -1,0 +1,18 @@
+record: 记录
+	screenshoot: 自动截屏文件夹,签到时截屏取证
+	record.json: 日志
+	json_reaader.py: 显示日志内容
+
+remote_shoot: 遥控截屏存储文件夹
+
+res: 资源
+	button.png: 识别目标
+	move_time.res: 存储拖动动作完成时间
+
+templates: 网页模板
+
+main.py: 自动签到主程序
+
+web.py: 远程截图、查看日志、修改拖动动作完成时间、启动main.py
+
+(temp.temp: main.py向web.py通讯用,传输运行状态)
